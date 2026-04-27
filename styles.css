@@ -8,10 +8,9 @@ body {
     header {
       background-color: #1f2937;
       display: flex;
-      align-items: center;
+      justify-content: space-between;
       padding: 20px 48px;
       border-bottom: 1px solid #1a1a1a;
-      position: sticky;
       top: 0;
     }
 
@@ -38,11 +37,11 @@ body {
       flex: 1;
       display: flex;
       justify-content: center;
-      border: solid 1px red;
     }
 
     .nav-lista ul {
       display: flex;
+      align-items: center;
       gap: 120px;
       list-style: none;
       margin: 0;
@@ -64,13 +63,34 @@ body {
     }
 
 /* MAIN */
-main{
+.main{
     padding-top: 100px;
     border: solid 1px red;
     margin-left: 400px;
     margin-right: 400px;
+    display: flex;
 
 }
 .main-text{
     border: solid 1px blue;
+}
+
+.main-img{
+    padding-left: 200px;
+}
+
+
+.main-2{
+    padding-top: 200px;
+    border: solid 1px red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+
+
+.info{
+    border: solid 1px;
 }
