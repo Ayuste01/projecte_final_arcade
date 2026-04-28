@@ -61,13 +61,24 @@ Para crear la web, utilicé los siguientes recursos:
 1. realfavicongenerator, para crear el icono de la web junto con canva
  https://realfavicongenerator.net/your-favicon-is-ready
 2. coolors, para crear una paleta de colores a utilizar durante la creación de la web
-   https://coolors.co/fff8ef-1f2937-8ab7ff-e5e7eb-10b981
+   https://coolors.co/f4f4f4-1e1e1e-2e2e2e-e0e0e0-888888-fffbef
 
    Colores a utilizar:
-   Floral White: #FFF8EF (fondo general)
-   Jet Black: #1F2937 (fondos)
-   Baby blue ice #8AB7FF (Aún no lo sé)
-   Platinum #E5E7EB (textos)
-   Mint leaf #10B981 (acentuar)
+   Carbon Black #1E1E1E (color general)
+   Graphite #2E2E2E
+   Grey Olive #888888
+   Alabaster Grey #E0E0E0
+   Floral white #FFFBEF
+   White Smoke #F4F4F4
+
 
    <img src="images/paleta_colores.png" width="500">
+
+
+otras ideas
+
+<img src="images/plantilla-colores2.png" width="500">
+
+   color principal
+   tonos mismo color principal
+   color complementario
