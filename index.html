@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="icon" type="image/png" href="images/favicon-96x96.png" />
+    <title>Home - create your own bartop arcade</title>
+    <link rel="icon" type="image/png" href="images/logo_arcade.png" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </head>
   <body>
     <header>
-      <div class="nav-logo">
+      <a href="index.html" class="nav-logo">
         <img src="images/logo_arcade.png" alt="" width="36" height="36" />
         <p>Mini arcade</p>
-      </div>
+      </a>
       <nav class="nav-lista">
         <ul>
-          <li>Proyecto</li>
-          <li>Tutorial</li>
-          <li>Componentes</li>
+          <a href="pages/proyecto.html"><li>Proyecto</li></a>
+          <a href="pages/tutorial.html"><li>Tutorial</li></a>
+          <a href="pages/componentes.html"><li>Componentes</li></a>
         </ul>
       </nav>
       <div class="btn-nav">
@@ -29,19 +29,16 @@
       <div class="main">
         <div class="main-text">
           <h1>La arcade</h1>
-          <h1>que siempre</h1>
+          <h1>que <span class="siempre">siempre</span></h1>
           <h1>quisiste.</h1>
-          <p>
-            Una mini bartop construida de cero con tus propias manos. Todo lo
-            que necesitas
-          </p>
+          <p>Una mini bartop construida de cero con tus propias manos. Todo lo que necesitas</p>
           <div class="btns-main">
             <button class="btn-main">Ver tutorial</button>
             <button class="btn-main">comprar</button>
           </div>
         </div>
         <div class="main-img">
-          <img src="images/foto.png" alt="" />
+          <canvas id="canvas-arcade"></canvas>
         </div>
       </div>
 
@@ -73,6 +70,14 @@
           <h3>Software</h3>
           <p>RetroPie/Batocera, configuración y juegos. Lista para jugar desde el primer día.</p>
         </div>
+      </div>
     </main>
+    <footer>
+      <p>haaaa</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
