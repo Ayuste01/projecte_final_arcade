@@ -70,11 +70,15 @@ header {
 .nav-lista li {
   font-size: 14px;
   font-weight:500;
-  color: white;
   transition: 0.3s;
 }
+.nav-lista a{
+  color: white;
+  text-decoration: none;
+}
 .nav-lista li:hover{
-  transform: scale(1.1);
+  opacity: 0.8;
+  transform: translateY(-1px);
 }
 
 .btn-nav {
@@ -128,6 +132,7 @@ header {
 .btn-main {
   height: 55px;
   width: 125px;
+  font-weight:400;
   background-color: #e0e0e0;
   cursor: pointer;
   border-radius: 30px;
@@ -139,7 +144,6 @@ header {
 .btn-main:hover {
   transform: scale(1.1);
   box-shadow: 0 15px 20px rgba(0, 0, 0, 3);
-  background-color: #fdf2cf;
 /* 
 0 horizontal
 10 vertical
