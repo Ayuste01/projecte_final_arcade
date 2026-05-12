@@ -84,4 +84,19 @@ otras ideas
    color complementario
 
 
+Librerias utilizadas en JS
+//Three.js — librería 3D para web. Maneja escena, cámara, luces y render usando WebGL por debajo.
+//GLTFLoader — extensión de Three.js para cargar archivos .glb/.gltf
+
+
+Modelos 3d para web
 https://www.turbosquid.com/
+
+
+# Referencias
+animacions hover
+https://prismic.io/blog/css-hover-effects
+
+botones
+https://uiverse.io/buttons
+

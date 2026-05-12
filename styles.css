@@ -1,12 +1,17 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1E1E1E;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: #F4F4F4;
+  background-color: #1e1e1e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f4f4f4;
 }
-a{
+a {
   text-decoration: none;
+}
+h1 {
+  font-size: 60px;
+  margin: 0;
+  line-height: 1.3;
 }
 
 header {
@@ -14,7 +19,7 @@ header {
   justify-content: space-between;
   position: sticky;
   padding: 20px 48px;
-  border-bottom: 1px solid #1E1E1E;
+  border-bottom: 1px solid #1e1e1e;
   background-color: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -25,7 +30,7 @@ header {
 .btn-head {
   height: 40px;
   width: 100px;
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   border-radius: 30px;
 }
 
@@ -42,15 +47,15 @@ header {
 }
 
 .nav-logo p {
-  padding-left: 10px;
+  padding-left: 30px;
   color: white;
+  font-weight: 500;
 }
 
 .nav-lista {
   flex: 1;
   display: flex;
   justify-content: center;
-
 }
 
 .nav-lista ul {
@@ -60,13 +65,16 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
 .nav-lista li {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight:500;
   color: white;
-  
+  transition: 0.3s;
+}
+.nav-lista li:hover{
+  transform: scale(1.1);
 }
 
 .btn-nav {
@@ -76,11 +84,10 @@ header {
 
 .main {
   padding-top: 100px;
-  margin-left: 400px;
-  margin-right: 400px;
+  margin-left: 450px;
+  margin-right: 300px;
   display: flex;
   align-items: center;
-  gap: 60px;
 }
 
 .main-text {
@@ -93,9 +100,17 @@ header {
   justify-content: center;
   align-items: center;
 }
-.siempre{
-  color:#fdf2cf;
+.siempre {
+  color: #fdf2cf;
+  cursor: default;
+  transition: text-shadow 0.8s ease;
 }
+.siempre:hover {
+  text-shadow:
+    0 0 15px #fdf2cf,
+    0 0 35px #fdf2cf;
+}
+
 #canvas-arcade {
   width: 500px;
   height: 700px;
@@ -111,10 +126,25 @@ header {
 }
 
 .btn-main {
-  height: 40px;
-  width: 100px;
-  background-color: #E0E0E0;
+  height: 55px;
+  width: 125px;
+  background-color: #e0e0e0;
+  cursor: pointer;
   border-radius: 30px;
+  transition: 0.3s;
+}
+.btn-main2 {
+  margin-left: 20px;
+}
+.btn-main:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 3);
+  background-color: #fdf2cf;
+/* 
+0 horizontal
+10 vertical
+30 difuminado
+rgba (color), (transpariencia) */
 }
 
 .info {
@@ -122,14 +152,12 @@ header {
   padding: 10px;
 }
 
-
-
-footer{
+footer {
   display: flex;
   justify-content: space-between;
   position: sticky;
   padding: 20px 48px;
-  border-bottom: 1px solid #1E1E1E;
+  border-bottom: 1px solid #1e1e1e;
   background-color: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
