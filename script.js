@@ -89,7 +89,7 @@ loader.load(
     const dist = (maxDim / 2) / Math.tan(fovRad / 2);
 
     // Aleja la camara en Z (hacia el espectador), 1.5 es el margen
-    camera.position.z = dist * 1.5;
+    camera.position.z = dist * 1.227;
 
     // Sube la camara un poco para centrar mejor el modelo visualmente
     camera.position.y = dist * 0.28;
