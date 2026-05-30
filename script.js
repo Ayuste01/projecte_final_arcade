@@ -147,5 +147,32 @@ window.addEventListener("resize", () => {
   renderer.setSize(w, h);
 });
 
+const main = document.querySelector(".main");
+
+  main.addEventListener("mousemove", (e) => {
+    // Obtenemos el tamaño y posición del elemento 'main'
+    const rect = main.getBoundingClientRect();
+    
+    // Calculamos la posición del ratón respecto al elemento en %
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+    // Actualizamos las variables CSS
+    main.style.setProperty('--x', `${x}%`);
+    main.style.setProperty('--y', `${y}%`);
+  });
 
 
+  // Copiar portapapeles discord
+function copiarDiscord() {
+  const usuario = "sr.pingu01";
+  const aviso = document.getElementById("aviso-copiado");
+  // Copiar al portapapeles
+  navigator.clipboard.writeText(usuario);
+  aviso.classList.add("mostrar");
+  // quito la clase 2 segundos despues de que aparezca
+  setTimeout(() => {
+    aviso.classList.remove("mostrar");
+  }, 2000);
+  // el tiempo va en milisegundos, como en el proyecto de racc
+}

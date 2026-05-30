@@ -12,13 +12,14 @@
     <header>
       <a href="index.html" class="nav-logo">
         <img src="images/logo_arcade.png" alt="" width="36" height="36" />
-        <p>Mini arcade</p>
+        <p>Mini bartop project.</p>
       </a>
       <nav class="nav-lista">
         <ul>
           <li><a href="pages/proyecto.html">Proyecto</a></li>
           <li><a href="pages/tutorial.html">Tutorial</a></li>
           <li><a href="pages/componentes.html">Componentes</a></li>
+          <li><a href="">Contacto</a></li>
         </ul>
       </nav>
       <div class="btn-nav">
@@ -59,7 +60,9 @@
         <div class="info">
           <p class="pequeno">01</p>
           <h3>Hardware</h3>
-          <p>Raspberry Pi, pantalla, botones arcade y joystick. Todo explicado.</p>
+          <p>
+            Raspberry Pi, pantalla, botones arcade y joystick. Todo explicado.
+          </p>
         </div>
         <div class="info">
           <p class="pequeno">02</p>
@@ -69,12 +72,110 @@
         <div class="info">
           <p class="pequeno">03</p>
           <h3>Software</h3>
-          <p>RetroPie/Batocera, configuración y juegos. Lista para jugar desde el primer día.</p>
+          <p>
+            RetroPie/Batocera, configuración y juegos. Lista para jugar desde el
+            primer día.
+          </p>
         </div>
       </div>
     </main>
     <footer>
-      <p>haaaa</p>
+      <div class="footernav">
+        <div class="legal">
+          <p>Políticas de privacidad</p>
+          <p>Términos y condiciones</p>
+          <p>Cookies</p>
+        </div>
+        <div class="navegar">
+          <p style="cursor: pointer">Proyecto</p>
+          <p>Tutorial</p>
+          <p>Componentes</p>
+          <p>Comprar ahora</p>
+        </div>
+        <div class="contacto">
+          <p class="paginacontacto">Página de contacto</p>
+          <div class="redesicons">
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/652832689" target="_blank"
+              ><img
+                src="iconos/whatsapp.svg"
+                alt="Whatsapp"
+                id="icono"
+                width="40px"
+            /></a>
+            <!-- MAIL -->
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=alejandro.yuste2007@gmail.com"
+              target="_blank"
+            >
+              <img
+                src="iconos/gmail.svg"
+                alt="Email"
+                width="40px"
+                id="icono"
+              />
+            </a>
+            <!-- DISCORD -->
+            <div style="position: relative">
+              <div class="discord-posicion">
+                <span id="aviso-copiado" class="mensaje-oculto">¡Copiado!</span>
+                <img
+                  src="iconos/discord.svg"
+                  onclick="copiarDiscord()"
+                  alt="Discord"
+                  width="40px"
+                  style="cursor: copy"
+                  id="icono"
+                />
+              </div>
+            </div>
+          </div>
+          <p>Redes sociales:</p>
+          <div class="redesicons">
+            <a href="https://github.com/Ayuste07" target="_blank">
+              <img
+                src="iconos/github.svg"
+                alt="GitHub"
+                width="40px"
+                id="icono"
+              />
+            </a>
+
+            <a href="https://www.instagram.com/a_yuste07/" target="_blank">
+              <img
+                src="iconos/instagram.svg"
+                alt="Instagram"
+                width="40px"
+                id="icono"
+              />
+            </a>
+
+            <a href="https://x.com/srpingu01" target="_blank">
+              <img
+                src="iconos/x.svg"
+                alt="X (Twitter)"
+                width="40px"
+                id="icono"
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/alejandro-yuste-20699939a/"
+              target="_blank"
+            >
+              <img
+                src="iconos/linkedin-brands-solid-full.svg"
+                alt="LinkedIn"
+                width="55px"
+                id="icono"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2026 mini bartop project. Todos los derechos reservados</p>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>

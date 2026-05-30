@@ -1,4 +1,4 @@
-  @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -30,11 +30,15 @@ header {
 
 .btn-head {
   height: 40px;
-  width: 100px;
+  width: 120px;
   background-color: #e0e0e0;
   border-radius: 30px;
+  transition: 0.3s;
 }
-
+.btn-head:hover{
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
 .nav-logo {
   display: flex;
   align-items: center;
@@ -88,21 +92,25 @@ header {
 }
 
 .main {
-  margin: 15px 100px;
+  margin: 0px 100px;
   padding-top: 100px;
   border-radius: 10px;
+  padding-left: 150px;
   display: flex;
   align-items: center;
-  /* El secreto está en este 60% 50% */
-  background: radial-gradient(circle at 60% 50%, rgba(0, 122, 255, 0.25) 0%, #131313 70%);
   min-height: 80vh;
   overflow: hidden;
+  background: radial-gradient(
+    circle at var(--x, 60%) var(--y, 50%),
+    rgba(0, 122, 255, 0.25) 0%,
+    #131313 70%
+  );
+  transition: background 0.15s ease-out;
 }
-
 .main-text {
   flex: 1;
 }
-.main-text h1{
+.main-text h1 {
   font-size: 115px;
 }
 
@@ -113,14 +121,14 @@ header {
   align-items: center;
 }
 .siempre {
-  color:  #a6c8ff;
+  color: #a6c8ff;
   cursor: default;
   transition: text-shadow 0.8s ease;
 }
 .siempre:hover {
   text-shadow:
-    0 0 15px  #007aff,
-    0 0 35px  #007aff;
+    0 0 15px #007aff,
+    0 0 35px #007aff;
 }
 
 #canvas-arcade {
@@ -167,14 +175,83 @@ rgba (color), (transpariencia) */
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
   position: sticky;
   padding: 20px 48px;
   border-bottom: 1px solid #1e1e1e;
   background-color: rgba(10, 10, 10, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   top: 0;
   margin-top: 20px;
+}
+.footernav {
+  display: flex;
+  justify-content: space-between;
+}
+.legal p {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.legal p:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+.navegar p {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.navegar p:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+.paginacontacto {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.paginacontacto:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+.redesicons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  filter: invert(0.8);
+}
+#icono {
+  cursor: pointer;
+  transition: 0.3s;
+}
+#icono:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+.copyright {
+  border-top: 1px solid #222;
+  padding-top: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* mensaje copiar portapapeles discord */
+.discord-posicion {
+  position: relative;
+  display: inline-block;
+}
+
+.mensaje-oculto {
+  display: none; 
+  position: absolute;
+  top: -30px;    
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.mostrar {
+  display: block;
 }

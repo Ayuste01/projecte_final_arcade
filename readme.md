@@ -100,3 +100,6 @@ https://prismic.io/blog/css-hover-effects
 botones
 https://uiverse.io/buttons
 
+# Iconos
+https://simpleicons.org/
+
