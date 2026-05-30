@@ -255,3 +255,59 @@ footer {
 .mostrar {
   display: block;
 }
+
+
+
+.maincontactar{
+  margin: 20px 100px;
+  padding-top: 100px;
+  border-radius: 10px;
+  padding-left: 150px;
+  min-height: 70vh;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+.formulario input{
+  background-color: #dbdbdb;
+  border-radius: 10px;
+  height: 20px;
+  width: 300px;
+}
+
+#tema-consulta{
+  background-color: #dbdbdb;
+  border-radius: 10px;
+  height: 25px;
+  width: 310px;
+}
+#asunto{
+  font-family: "Inter Tight", sans-serif;
+  color: #1a1a1a;
+  height: 200px;
+  width: 1460px;
+  border-radius: 10px;
+  background-color: #dbdbdb;
+}
+.enviar{
+  margin-left: 15px;
+  background-color: #dbdbdb;
+  border-radius: 10px;
+  height: 25px;
+  width: 80px;
+}
+
+.iconocontacto{
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  transition: 0.3s;
+  filter: invert(0.8);
+}
+.iconocontacto:hover{
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+.logoscontactar{
+  display: flex;
+  align-items: center;
+}
