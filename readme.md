@@ -1,105 +1,125 @@
-# Màquina arcade bartop - Projecto final
+# Mini Bartop Project - Memoria del Proyecto Final
 
-Alejandro Yuste Ponces
+## 1. Integrantes del proyecto
+**Alejandro Yuste Ponces**
 
-## Objectius
+---
 
-El objetivo principal será crear una máquina arcade de tipo "bartop" por un precio que todo el mundo podría permitir-se hacer una
-Fases y tareas del proyecto bartop
+## 2. Título
+Mini Bartop Project — Crea tu propia arcade bartop
 
-1. Diseño
-   Diseño del mueble (medidas, planos)
-   Diseño del arte gráfico (vinilos, side art...)
-   Diseño de distribución interna (pantalla, mando, raspberry pi)
+---
 
-2. Compra de materiales
-   Pantalla (monitor o tablet adaptada)
-   Raspberry Pi
-   Botones arcade y joystick
-   Cables y conectores
-3. Construcción del mueble
-   Impresión de las piezas
-   Montaje
-   Lijado y ajuste
-   Pintura / preparación para vinilos
-4. Electrónica
-   Instalación de pantalla
-   Montaje de botones y joystick
-   Cableado del panel de control
-   Alimentación eléctrica
-5. Software
-   Instalación de sistema (RetroPie / Batocera)
-   Configuración de emuladores
-   Configuración de mandos
-   Carga de juegos (ROMs)
-6. Integración
-   Montaje final de componentes
-   Organización del cableado interno
-   Ajustes de ventilación
-7. Pruebas
-   Test de controles
-   Test de audio y vídeo
-   Ajustes de software
-   Corrección de errores
-8. Acabado
-   Colocación de vinilos
-   Limpieza final y ajustes estéticos
-9. Funcionamiento correcto
-   Se puede jugar a las roms anteriormente introducidas
-   los controles funcionan bien
-   el Sistema Operativo funciona
+## 3. Objetivos
+El objetivo principal es construir una máquina arcade bartop a un precio asequible (alrededor de 70 €) para que cualquier persona pueda tener una en casa.
 
+- Diseñar dos modelos de carcasa 3D (Lapcade y Bartop).
+- Configurar una Raspberry Pi con el sistema Batocera para jugar a ROMs.
+- Crear un sitio web que explique el proyecto y permita comprar los componentes.
+- Desplegar el sitio web en un servidor Github pages.
 
+---
 
+## 4. Explicación del proyecto
+El proyecto nace de la idea de hacer accesibles las máquinas arcade. En vez de comprar una cara, se propone fabricarla uno mismo con una impresora 3D y una Raspberry Pi.
 
+Se han diseñado dos modelos:
 
+- **Lapcade**: versión pequeña y portátil, más barata y fácil de montar.
+- **Arcade Bartop**: versión grande y estética, con el aspecto clásico de una arcade.
 
+El sitio web tiene las siguientes páginas:
+- **Inicio** — presentación con modelo 3D animado
+- **Proyecto** — explicación de los modelos
+- **Tutorial** — guía paso a paso para montar la consola
+- **Componentes** — lista de piezas necesarias
+- **Comprar** — tres packs de compra
+- **Contacto** — formulario y redes sociales
 
+---
 
-# Creación web
-Para crear la web, utilicé los siguientes recursos:
-1. realfavicongenerator, para crear el icono de la web junto con canva
- https://realfavicongenerator.net/your-favicon-is-ready
-2. coolors, para crear una paleta de colores a utilizar durante la creación de la web
-   https://coolors.co/f4f4f4-1e1e1e-2e2e2e-e0e0e0-888888-fffbef
+## 5. Material del proyecto
 
-   Colores a utilizar:
-   Carbon Black #1E1E1E (color general)
-   Graphite #2E2E2E
-   Grey Olive #888888
-   Alabaster Grey #E0E0E0
-   Floral white #FFFBEF
-   White Smoke #F4F4F4
+**Hardware:**
+- Raspberry Pi 0 2W
+- Micro SD 32 GB
+- Pantalla LCD 7"
+- Mando arcade USB (joystick y botones)
+- Adaptadores OTG y HDMI
+- Cable de alimentación 5V 2A
+- Carcasa impresa en 3D
 
+**Software:**
+- HTML, CSS y JavaScript — construcción del sitio web
+- Three.js — modelo 3D animado en la web
+- Batocera Linux — sistema operativo de la consola
+- Raspberry Pi Imager — para instalar el sistema en la SD
+- Tinkercad — diseño de las carcasas en 3D
+- GitHub — repositorio del código
+- Vercel — despliegue del sitio web
 
-   <img src="images/paleta_colores.png" width="500">
+---
 
+## 6. Desarrollo y despliegue
 
-otras ideas
+El sitio web se ha hecho con HTML, CSS y JavaScript puros, sin ningún framework.
 
-<img src="images/plantilla-colores2.png" width="500">
+La parte más compleja es la página de inicio, donde se usa **Three.js** para mostrar un modelo 3D de la máquina que rota solo y flota. También hay un efecto de luz azul que sigue el cursor del ratón.
 
-   color principal
-   tonos mismo color principal
-   color complementario
+El resto de páginas siguen la misma estructura: header fijo, contenido central y footer común con redes sociales.
 
+El sitio web se ha desplegado en Github.
 
-Librerias utilizadas en JS
-//Three.js — librería 3D para web. Maneja escena, cámara, luces y render usando WebGL por debajo.
-//GLTFLoader — extensión de Three.js para cargar archivos .glb/.gltf
+El servidor con **Raspberry Pi** se configuró y probó el 18 de mayo.
 
+---
 
-Modelos 3d para web
-https://www.turbosquid.com/
+## 7. Planificación
 
+**Sprint 1** — Diseño: colores, logotipo, favicon y estructura HTML básica.
 
-# Referencias
-animacions hover
-https://prismic.io/blog/css-hover-effects
+**Sprint 2** — Estilos: CSS completo, maquetación con Grid y Flexbox, animaciones.
 
-botones
-https://uiverse.io/buttons
+**Sprint 3** — JavaScript: modelo 3D con Three.js, efecto de luz, copia de Discord.
 
-# Iconos
-https://simpleicons.org/
+**Sprint 4** — Contenido: tutorial, página de compra, página de contacto.
 
+**Sprint 5** — Despliegue: GitHub, Vercel, test en Raspberry Pi y correcciones finales.
+
+*Diagrama de Gantt*
+![alt text](diagrama_gantt.png)
+
+---
+
+## 8. Webgrafía
+
+- Three.js: https://threejs.org/
+- Batocera Linux: https://batocera.org/
+- Raspberry Pi Imager: https://www.raspberrypi.com/software/
+- Tinkercad: https://www.tinkercad.com/
+- Simple Icons (iconos SVG): https://simpleicons.org/
+- Coolors (paleta de colores): https://coolors.co/
+- Google Fonts (Inter Tight): https://fonts.google.com/
+- UIverse (botones CSS): https://uiverse.io/buttons
+- Vercel: https://vercel.com/
+- GitHub del proyecto: https://github.com/Ayuste07
+
+---
+
+## 9. Anexos
+
+**Packs de venta:**
+
+| Pack | Precio | Incluye |
+|---|---|---|
+| Básico | 60 € | Raspberry Pi, Micro SD, adaptadores, cable |
+| Lapcade | 80 € | Pack Básico + pantalla + carcasa Lapcade + mando |
+| Bartop | 120 € | Pack Básico + pantalla + carcasa Bartop + mando pro |
+
+**Fechas importantes:**
+
+| Fecha | Evento |
+|---|---|
+| 18 de mayo | Test de despliegue en Raspberry |
+| 29 de mayo | Fecha límite de entrega |
+| 1 de junio | Defensa del proyecto |
